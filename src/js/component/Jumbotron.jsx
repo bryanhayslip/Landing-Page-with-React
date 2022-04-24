@@ -2,22 +2,23 @@ import React from "react";
 
 const Jumbotron = () => {
 	return (
-		<div className="jumbotron">
-			<section className="py-5 text-center container bg-light">
+		<div className="jumbotron container">
+			<section className="py-5 text-center bg-light">
 				<div className="row py-lg-5">
 					<div className="col-lg-6 col-md-8 mx-auto">
-						<h1 className="fw-light">Album example</h1>
+						<h1 className="fw-light">
+							My first project with React!
+						</h1>
 						<p className="lead text-muted">
-							Something short and leading about the collection
-							below—its contents, the creator, etc. Make it short
-							and sweet, but not too short so folks don’t simply
-							skip over it entirely.
+							I can modify this later to add some more
+							functionality - but for now it's a simple landing
+							page using React components, styled with Bootstrap.
 						</p>
 						<p>
-							<a href="#" className="btn btn-primary my-2">
+							<a href="#" className="btn btn-success my-2">
 								Main call to action
-							</a>
-							<a href="#" className="btn btn-secondary my-2">
+							</a>{" "}
+							<a href="#" className="btn btn-danger my-2">
 								Secondary action
 							</a>
 						</p>
@@ -27,5 +28,9 @@ const Jumbotron = () => {
 		</div>
 	);
 };
+
+// Jumbotron.propTypes = {
+// 	title: PropType.string,
+// };
 
 export default Jumbotron;
